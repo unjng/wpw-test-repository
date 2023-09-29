@@ -1,2 +1,110 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+    font-family: 'Lucette'; 
+    src: url('path-to-font/Lucette.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+        }
+        body {
+            background-color: lightgrey;
+            font-family: 'Lucette', serif;
+        }
+        .yesterdayyyy, .yesterdayyy, .yesterday, .today, .tomorrow, .dayaftertomorrow, .yesterdayyesterday, .dayaftertomorrowtomorrow, .dayafterttt, .dayaftertttt{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .yesterdayyyy li, .yesterdayyy li,.yesterday li, .today li, .tomorrow li, .dayaftertomorrow li, .yesterdayyesterday li, .dayaftertomorrowtomorrow li, .dayafterttt li, .dayaftertttt li{
+            border: 1px solid black;
+            list-style: none;
+            display: block; 
+        }
+        .yesterdayyyy:hover::before{
+            background-color: yellowgreen;
+            transform: scale(3);
+            content: "🍳";
+        }
+        .yesterdayyy:hover::before{
+            background-color: red;
+            transform: scale(3);
+            content:"🫖🥛🍵"
+        }
+        .yesterdayyesterday:hover::before {
+            background-color: yellow;
+            border-radius: 20%;
+            transform: scale(3);
+            content: "🍿🥮🥛🥢";
+        }
+        .yesterday:hover::before {
+            background-color: yellow;
+            border-radius: 20%;
+            transform: scale(3);
+            content: "🍔🥤🍦🍧🍿";
+        }
+        .today:hover::before {
+            background-color: aquamarine;
+            transform: scale(3);
+            content: "🍳🍰🍙🥟🍋🧋🫐";
+        }
+        .tomorrow:hover::before {
+            background-color: greenyellow;
+            transform: scale(3);
+            content: "i dont know yet";
+        }
+        .dayaftertomorrow:hover::before {
+            background-color: pink;
+            transform: scale(3);
+            content: "maybe.... fried rice 🍲🍉🍻";
+        }
+        .dayaftertomorrowtomorrow:hover::before {
+            background-color: orangered;
+            transform: scale(3);
+            content: "🍪🦪🍷🍰"
+        }
+        .dayafterttt:hover::before {
+            background-color: white;
+            transform: scale(3);
+            content: "i think im eating out somewhere"
+        }
+        .dayaftertttt:hover::before {
+            background-color: brown;
+            transform: scale(3);
+            content: "🥠🥘🥤🍮🍇"
+        }
+    </style>
+</head>
+<body>
+    <h2>pov: you're my digestive system</h2>
+    <ul class="yesterdayyyy">
+        <li> yesterday yesterday yesterday yesterday</li>
+    <ul class="yesterdayyy">
+        <li> yesterday yesterday yesterday</li>
+    <ul class="yesterdayyesterday">
+        <li>yesterday yesterday</li>
+    <ul class="yesterday">
+        <li>yesterday</li>
+    </ul>
+    <ul class="today">
+        <li>today</li>
+    </ul>
+    <ul class="tomorrow">
+        <li>tomorrow</li>
+    </ul>
+    <ul class="dayaftertomorrow">
+        <li>day after tomorrow</li>
+    <ul class="dayaftertomorrowtomorrow">
+        <li>day after tomorrow tomorrow</li>
+    <ul class="dayafterttt">
+        <li>day after tomorrow tomorrow tomorrow</li>
+    <ul class="dayaftertttt">
+        <li>day after tomorrow tomorrow tomorrow tomorrow</li>
+    </ul>
+</body>
+</html>
